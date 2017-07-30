@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery UI Code Player Project</title>
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css">
+</head>
+<body>
+	<!-- CodePlayer Header Bar -->
+	<div id="header">
+		<div id="logo">
+			CodePlayer
+		</div>
+		<!-- CodePlayer Header Bar Toogle Buttons -->
+		<div id="buttonContainer">
+			<div class="toggleButton active" id="html">HTML</div>
+			<div class="toggleButton" id="css">CSS</div>
+			<div class="toggleButton" id="javascript">JavaScript</div>
+			<div class="toggleButton active" id="output">Output</div>
+		</div>
+	</div>
+	<!-- CodePlayer Content Areas -->
+	<div id="bodyContainer">
+		<textarea id="htmlPanel" class="panel"><p id="paragraph">Hello World</p></textarea>
+		<textarea id="cssPanel" class="panel hidden">p { color: green; }</textarea>
+		<textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML = "Hello Victor"</textarea>
+		<iframe id=outputPanel class=panel></iframe>
+	</div>
+
+	<!-- External JavaScript -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+	<script type="text/javascript" src="scripts/scripts.js"></script>
+</body>
+</html>
